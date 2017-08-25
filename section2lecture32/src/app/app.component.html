@@ -2,54 +2,10 @@
 
   <div class="grid-x">
 
-    <div class="small-4 cell">
+    <div class="small-4 cell" *ngFor="let cardModel of this.cardModels">
 
-      <app-card>
-
-      </app-card>
-
-    </div>
-
-    <div class="small-4 cell">
-
-      <app-card>
-
-      </app-card>
-
-    </div>
-
-    <div class="small-4 cell">
-
-      <app-card>
-
-      </app-card>
-
-    </div>
-
-  </div>
-
-  <div class="grid-x">
-
-    <div class="small-4 cell">
-
-      <app-card>
-
-      </app-card>
-
-    </div>
-
-    <div class="small-4 cell">
-
-      <app-card>
-
-      </app-card>
-
-    </div>
-
-    <div class="small-4 cell">
-
-      <app-card>
-
+      <app-card [title]="cardModel.title"
+                [imageSrc]="cardModel.imageSrc">
       </app-card>
 
     </div>
